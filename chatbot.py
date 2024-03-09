@@ -14,7 +14,7 @@ def main():
     updater = Updater(token=(os.environ['TELEGRAM_ACCESS_TOKEN']), use_context=True)
     dispatcher = updater.dispatcher
     global redis1
-    redis1 = redis.Redis(host=(os.environ['REDIS''HOST']), password=(os.environ['REDIS_PASSWORD']),
+    redis1 = redis.Redis(host=(os.environ['REDIS_HOST']), password=(os.environ['REDIS_PASSWORD']),
                          port=(os.environ['REDIS_REDISPORT']))
 
     # You can set this logging module, so you will know when and why things do not work as expected Meanwhile, update your config.ini as:
